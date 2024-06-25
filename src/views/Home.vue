@@ -6,6 +6,7 @@
   </template>
   
   <script>
+  import IndoorMap from '@/components/IndoorMap.vue';
   export default {
     name: 'Home',
     mounted() {
@@ -40,7 +41,10 @@
   
         animate();
       }
-    }
+    },
+    components: {
+    IndoorMap
+  }
   }
   </script>
   
@@ -51,6 +55,9 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .home {
+  text-align: center;
   }
   </style>
   
